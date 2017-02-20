@@ -1,0 +1,34 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21" style="background-color:#EEEEEE;">
+    <ion-header-bar class="bar-assertive">
+      <div class="title">Clown Car</div>
+    </ion-header-bar>
+    <ion-content padding="true" class="side-menu-left has-header ">
+      <ion-list id="clownCar-list1">
+        <ion-item class="item-avatar item-icon-right" id="clownCar-list-item10" ui-sref="clownCar.profile" menu-close="">
+          <img src="img/YQJWw1POSUwQ2bsiZCup_AAEAAQAAAAAAAAR9AAAAJDMxNzVmN2ZkLTFhZTEtNGVmYS1iZjg0LTcwYWExMDUwYWJmOQ.jpg">
+          <h2>Adam Wolf</h2>
+          <p>View Profile</p>
+          <i class="icon ion-ios-arrow-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-left" id="clownCar-list-item2" ui-sref="clownCar.ride" menu-close="">
+          <i class="icon ion-map"></i>Ride</ion-item>
+        <ion-item class="item-icon-left dark" id="clownCar-list-item17" ui-sref="clownCar.payment" menu-close="">
+          <i class="icon ion-card"></i>Payment</ion-item>
+        <ion-item class="item-icon-left" id="clownCar-list-item3" ui-sref="clownCar.rideHistory" menu-close="">
+          <i class="icon ion-android-refresh"></i>History</ion-item>
+        <ion-item class="item-icon-left" id="clownCar-list-item11" ui-sref="clownCar.settings" menu-close="">
+          <i class="icon ion-ios-settings-strong"></i>Settings</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

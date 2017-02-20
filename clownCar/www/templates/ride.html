@@ -1,0 +1,18 @@
+<ion-view title="Ride" id="page6">
+  <ion-nav-buttons side="right" class="button has-header">
+    <text style="margin: 5px 3px 0 0" ng-click="cancelTrip()" ng-show="cancel">Cancel</text>
+  </ion-nav-buttons>
+  <ion-content padding="false" scroll="false" class="has-header">
+    <div>
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options" style="height:100vh; width: 100vw; margin: 0; padding: 0;">
+        <ui-gmap-layer type="TrafficLayer" show="map.showTraficLayer"></ui-gmap-layer>
+      </ui-gmap-google-map>
+      <form class="list" style="position: absolute; top: 10px; left: 10px; z-index: 99; width: 94%">
+        <label class="item item-select">
+          <span class="input-label">Route</span>
+          <select ng-model="rt" ng-options="rt.id as rt.namedir for rt in routes" ng-change="changeRoute(rt)"></select>
+        </label>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>
